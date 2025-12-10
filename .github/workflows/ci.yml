@@ -26,3 +26,9 @@ jobs:
 
       - name: Run unit tests
         run: ./gradlew test --info
+
+      - name: Run test suite 1
+        run: java -cp build/classes/java/main uj.wmii.pwj.anns.MyTestEngine uj.wmii.pwj.anns.MyBeautifulTestSuite
+
+      - name: Run test suite 2
+        run: java -cp build/classes/java/main uj.wmii.pwj.anns.MyTestEngine uj.wmii.pwj.anns.MyMagnificentTestSuite
