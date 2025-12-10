@@ -34,8 +34,8 @@ public class BannerPrinterTest {
     void testPrintSingleWord() {
         bannerPrinter.print("AB");
 
-        String expectedOutput = "AA1   BB1   \r\n" +
-                "AA2   BB2   \r\n";
+        String expectedOutput = "AA1   BB1   \n" +
+                "AA2   BB2   \n";
 
         assertEquals(expectedOutput, outContent.toString());
     }
@@ -46,8 +46,8 @@ public class BannerPrinterTest {
 
         bannerPrinter.print("ABC");
 
-        String expectedOutput = "AA1   BB1   CC1   \r\n" +
-                "AA2   BB2   CC2   \r\n";
+        String expectedOutput = "AA1   BB1   CC1   \n" +
+                "AA2   BB2   CC2   \n";
 
         assertEquals(expectedOutput, outContent.toString());
     }
