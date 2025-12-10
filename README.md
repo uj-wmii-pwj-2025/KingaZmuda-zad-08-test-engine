@@ -12,5 +12,9 @@ Zadaniem jest rozbudowanie silnika testowego Test Engine z wykładu.
 Aby uruchomić program:
 ```bash
 ./gradlew build  
-java -cp build/classes/java/main uj.wmii.pwj.anns.MyTestEngine uj.wmii.pwj.anns.MyBeautifulTestSuite
+java -cp build/classes/java/main uj.wmii.pwj.anns.MyTestEngine uj.wmii.pwj.anns.MyBeautifulTestSuite # pierwszy zestaw testów
+java -cp build/classes/java/main uj.wmii.pwj.anns.MyTestEngine uj.wmii.pwj.anns.MyMagnificentTestSuite # drugi zestaw testów
 ```
+ Powyższe, wraz z testami jednostkowymi (unit tests) są również uruchamiane przed GH Actions workflow `.github/workflows/ci.yml` przy każdym `git push`.
+ 
+ Uwaga: niektóre z unit testóœ mogą nie wykonywać się poprawnie przy systemie operacyjnym Windows ze względu na charakterystyczne dla niego znaki końca linii.
